@@ -3,3 +3,5 @@
     @csrf
     <button type="submit">Cerrar Sesión</button>
 </form>
+
+<a href="{{ route('crear-usuario') }}">Crear Usuario</a>
