@@ -25,3 +25,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/crear-usuario', [UserController::class, 'create'])->name('crear-usuario')->middleware('auth');
 Route::post('/crear-usuario', [UserController::class, 'store'])->middleware('auth');
+Route::get('/listar-usuario', [UserController::class, 'index'])->name('listar-usuario');
